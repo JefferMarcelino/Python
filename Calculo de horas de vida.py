@@ -5,7 +5,16 @@ print("-=" * 15)
 
 ano_nasc = int(input("Digite o seu ano de nascimento: "))
 ano_actual = int(input("Digite o ano actual (999 para pegar o ano do Computador): "))
+
 if ano_actual == 999:
     ano_actual = datetime.today().year
-print(ano_nasc)
-print(ano_actual)
+
+idade = ano_actual - ano_nasc
+dias = idade * 365
+horas = dias * 24
+
+print("-=" * 15)
+print("De acordo com os dados inseridos voce tem aproximadamente: ")
+print("     -> {} ano(s) de vida.".format(idade))
+print("     -> {} dia(s) de vida.".format(dias))
+print("     -> {} hora(s) de vida.".format(horas))
