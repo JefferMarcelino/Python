@@ -8,7 +8,7 @@ arq = "C:\Data\dados.txt"
 password = "C:\Data\password.txt"
 
 dado1 = open(password, "w")
-dado1.write("The Computer was turned on, and someone has invaded! \n")
+dado1.write("The Computer was turn on, and someone invaded! \n")
 dado1.write("--> Time = {}\n".format(datetime.today().time()))
 dado1.close()
 
@@ -28,12 +28,12 @@ try:
 except:
     dado = open(arq, "w")
 
-dado.write("The Computer was turned on: \n")
+dado.write("The Computer was turn on: \n")
 dado.write("--> Time = {}\n".format(datetime.today().time()))
 dado.write("--> Day = {}\n".format(datetime.today().date()))
 
 if invader == 1:
-    dado.write("Someone has invaded! \n")
+    dado.write("Someone invaded! \n")
 
 dado.write("\n")
 dado.write("\n")
